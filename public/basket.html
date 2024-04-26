@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample app</title>
+        <meta charset="utf-8">
+
+        <script type="importmap">
+            {"imports":{"basket":"/BuildArtifacts/basket.entry.K6FVIRYO.js","hero":"/BuildArtifacts/hero.entry.L7A4GWHB.js","Loader":"/BuildArtifacts/Loader.MR2OH4DG.js","non-react-component":"/BuildArtifacts/non-react-component.entry.3F26VI2Y.js"}}
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Hero page</a></li>
+                    <li><a href="/multiple-hero-instances.html">Multiple heroes on one page</a></li>
+                    <li><a href="/basket.html">Basket component loaded only</a></li>
+                    <li><a href="/non-react.html">Non react component</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div data-component="basket"></div>
+
+            <footer>
+                This is the page footer
+            </footer>
+        </main>
+
+        <script type="module">
+            import 'Loader';
+        </script>
+    </body>
+</html>

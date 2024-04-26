@@ -1,0 +1,31 @@
+{
+  "name": "new-js-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node ./build-scripts/serve.js",
+    "build": "node ./build-scripts/build.js",
+    "build:production": "npm run build",
+    "importmap:generate": "node ./build-scripts/generate-importmap.js",
+    "fonts:copy": "cpy \"src/fonts/**/*\" \"public/BuildArtifacts/fonts\" --parents",
+    "svg:generate": "node ./build-scripts/svg.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@akrc/esbuild-plugin-clean": "^0.1.3",
+    "@tanstack/react-query": "^5.28.8",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "cpy-cli": "^5.0.0",
+    "esbuild": "^0.20.1",
+    "esbuild-plugin-less": "^1.3.3",
+    "fs-extra": "^11.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.22.3"
+  }
+}

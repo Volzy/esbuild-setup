@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/Feature/Basket/Components/Basket.less"],
+  "sourcesContent": [".basket {\n  background-color: blueviolet;\n}\n"],
+  "mappings": "AAAA,CAAC,OACC,iBAAkB,OACpB",
+  "names": []
+}
