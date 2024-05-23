@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/Feature/FeatureX/Components/non-react-component.entry.ts"],
-  "sourcesContent": ["import ComponentLoader from '@Foundation/ComponentLoader';\r\n\r\nclass NonReactComponent extends ComponentLoader {\r\n    constructor(element: HTMLElement) {\r\n        super(element);\r\n        this.init();\r\n    }\r\n\r\n    init() {\r\n        console.log('NonReactComponent initialized');\r\n    }\r\n}\r\n\r\nexport default NonReactComponent;"],
-  "mappings": "wCAEA,IAAMA,EAAN,cAAgCC,CAAgB,CAC5C,YAAYC,EAAsB,CAC9B,MAAMA,CAAO,EACb,KAAK,KAAK,CACd,CAEA,MAAO,CACH,QAAQ,IAAI,+BAA+B,CAC/C,CACJ,EAEOC,EAAQH",
-  "names": ["NonReactComponent", "ComponentLoader_default", "element", "non_react_component_entry_default"]
-}

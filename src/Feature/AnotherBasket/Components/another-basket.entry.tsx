@@ -1,11 +1,11 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { QueryClientProvider } from '@tanstack/react-query';
-import { Basket as BasketComponent } from './Basket';
+import { AnotherBasket as AnotherBasketComponent } from './AnotherBasket';
 import ComponentLoader from '@Foundation/ComponentLoader';
 import QueryState from '@Foundation/StateManagement/QueryState';
 
-class Basket extends ComponentLoader {
+class AnotherBasket extends ComponentLoader {
     constructor(element: HTMLElement) {
         super(element);
         this.init();
@@ -17,7 +17,7 @@ class Basket extends ComponentLoader {
         const ReactApp = (props: any) => {
             return (
                 <QueryClientProvider client={queryClient}>
-                    <BasketComponent {...props} />
+                    <AnotherBasketComponent {...props} />
                 </QueryClientProvider>
             )
         }
@@ -27,4 +27,4 @@ class Basket extends ComponentLoader {
     }
 };
 
-export default Basket;
+export default AnotherBasket;

@@ -1,3 +1,5 @@
+import { QueryClient } from '@tanstack/react-query';
+
 class ComponentLoader {
     name: string|null;
     element: HTMLElement;
